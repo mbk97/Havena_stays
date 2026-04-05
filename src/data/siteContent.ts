@@ -10,7 +10,7 @@ import type {
   TrustBadge,
 } from '../types/site'
 
-export const companyName = 'Northbridge Stays'
+export const companyName = 'Havena Stays Ltd'
 export const companyTagline = 'Professional Airbnb management for UK landlords'
 
 export const navLinks: NavLink[] = [
@@ -62,9 +62,9 @@ export const aboutChecklist: ChecklistItem[] = [
     icon: 'home',
   },
   {
-    title: 'Positioned for a credible, modern launch',
+    title: 'Support for city apartments and short-stay homes',
     description:
-      'Ideal for a new management business that needs to look polished, reliable, and trustworthy.',
+      'Well suited to landlords who want consistent presentation, reliable operations, and a service guests can trust.',
     icon: 'wallet',
   },
 ]
@@ -192,19 +192,19 @@ export const serviceAreas = [
 export const contactDetails: ContactDetail[] = [
   {
     label: 'Email',
-    value: 'hello@northbridgestays.co.uk',
-    href: 'mailto:hello@northbridgestays.co.uk',
+    value: 'havena.stays@yahoo.com',
+    href: 'mailto:havena.stays@yahoo.com',
     icon: 'mail',
   },
   {
     label: 'Phone',
-    value: '+44 20 1234 5678',
-    href: 'tel:+442012345678',
+    value: '07879127999',
+    href: 'tel:+447879127999',
     icon: 'phone',
   },
   {
-    label: 'Location',
-    value: 'London, United Kingdom',
+    label: 'Address',
+    value: '19 Herald Rise, Livingston',
     icon: 'map',
   },
 ]

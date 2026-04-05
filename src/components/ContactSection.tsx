@@ -15,10 +15,10 @@ export function ContactSection({ contactDetails }: ContactSectionProps) {
           <SectionHeading
             eyebrow="Contact"
             title="Book a free consultation about your property"
-            description="A straightforward lead section that invites owners to start a conversation without pressure."
+            description="Speak with Havena Stays about your property, your rental goals, and the best next steps for short-stay management."
           />
 
-          <div className="contact-points">
+          <address className="contact-points">
             {contactDetails.map((detail) => (
               <div className="contact-point" key={detail.label}>
                 <span className="icon-badge icon-badge--inverted">
@@ -34,7 +34,7 @@ export function ContactSection({ contactDetails }: ContactSectionProps) {
                 </div>
               </div>
             ))}
-          </div>
+          </address>
 
           <div className="contact-expectations">
             <h3>What owners can expect</h3>

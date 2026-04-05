@@ -14,7 +14,7 @@ export function BenefitsSection({ benefits }: BenefitsSectionProps) {
           <SectionHeading
             eyebrow="Why Landlords Choose Us"
             title="Designed to deliver peace of mind as well as stronger returns"
-            description="The page is intentionally built to feel credible, calm, and professional rather than flashy or over-sold."
+            description="A reliable Airbnb management service should protect your property, improve the guest experience, and help you earn more with less day-to-day effort."
           />
 
           <ul className="benefits-summary__list">
@@ -35,10 +35,10 @@ export function BenefitsSection({ benefits }: BenefitsSectionProps) {
                 <Icon name="shield" className="icon" />
               </span>
               <div>
-                <strong>Trust-led positioning</strong>
+                <strong>Trusted property care</strong>
                 <p>
-                  Every section is written to reassure landlords that the
-                  business is legitimate and serious.
+                  Each stay is handled with clear processes, accountable
+                  oversight, and standards that protect your asset.
                 </p>
               </div>
             </li>

@@ -17,23 +17,27 @@ export function AboutSection({
         <div className="about-copy">
           <SectionHeading
             eyebrow="About The Business"
-            title="A trustworthy, hands-on management partner for UK property owners"
-            description="Northbridge Stays is designed to help landlords unlock stronger short-stay performance without taking on the daily workload themselves."
+            title="A guest-first, hands-on management partner for UK property owners"
+            description="We are committed to making every guest stay feel like home while giving landlords confidence that their property is being cared for properly."
           />
 
           <div className="about-copy__body">
             <p>
-              This business is positioned as a professional, family-led Airbnb
-              management company with a direct and personal service style.
-              Rather than feeling faceless or overly corporate, it gives
-              landlords the confidence that a real operator is overseeing the
-              details properly.
+              From listing quality and guest communication to cleaning
+              coordination and reporting, the focus is simple: deliver a
+              seamless stay for guests, protect the property, and reduce stress
+              for owners.
             </p>
             <p>
-              From listing quality and guest communication to cleaning
-              coordination and reporting, the focus is simple: protect the
-              property, reduce owner stress, and present a reliable service that
-              feels credible at first glance.
+              Havena Stays is a professional, family-led Airbnb management
+              company with a direct and personal service style. Rather than
+              feeling faceless or overly corporate, owners can feel confident
+              that a real operator is overseeing the details properly.
+            </p>
+            <p>
+              Havena Stays is designed to help landlords unlock stronger
+              short-stay performance without taking on the daily workload
+              themselves.
             </p>
           </div>
 
@@ -54,22 +58,22 @@ export function AboutSection({
 
         <div className="about-side">
           <article className="about-card">
-            <span className="about-card__avatar">NS</span>
+            <span className="about-card__avatar">HS</span>
             <p className="about-card__label">Founder & Operations Lead</p>
             <blockquote>
               “Landlords should feel confident that their property is being
               looked after properly, every single stay.”
             </blockquote>
             <cite>
-              Use this space for your uncle&apos;s photo, name, and short founder
-              story when you are ready to personalise the site.
+              Family-run oversight, responsive communication, and dependable
+              standards across every guest stay.
             </cite>
           </article>
 
           <article className="service-areas">
             <h3>Service Areas</h3>
             <p>
-              Presented as a UK-focused management business for city apartments,
+              Supporting landlords across key UK city markets for apartments,
               investor units, and owner-led short-stay properties.
             </p>
             <div className="service-areas__chips">

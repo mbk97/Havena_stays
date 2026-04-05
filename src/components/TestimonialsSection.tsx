@@ -14,8 +14,8 @@ export function TestimonialsSection({
       <div className="section-inner">
         <SectionHeading
           eyebrow="Testimonials"
-          title="Clean social proof for landlords who want reassurance"
-          description="These reviews are written as polished placeholders so the page feels complete while you gather real client feedback."
+          title="What landlords say about working with Havena Stays"
+          description="Feedback from owners who wanted more reliable Airbnb management, better guest communication, and less day-to-day stress."
           align="center"
         />
 
@@ -31,7 +31,9 @@ export function TestimonialsSection({
                   />
                 ))}
               </div>
-              <p>{testimonial.quote}</p>
+              <blockquote>
+                <p>{testimonial.quote}</p>
+              </blockquote>
               <footer>
                 <strong>{testimonial.author}</strong>
                 <span>{testimonial.role}</span>

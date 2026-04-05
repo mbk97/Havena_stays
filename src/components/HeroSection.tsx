@@ -50,6 +50,11 @@ export function HeroSection({ highlights }: HeroSectionProps) {
                 <img
                   src="/property-scene.svg"
                   alt="Illustrated modern UK apartment interior"
+                  width="720"
+                  height="540"
+                  loading="eager"
+                  fetchPriority="high"
+                  decoding="async"
                 />
               </div>
             </div>

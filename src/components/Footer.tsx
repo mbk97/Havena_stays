@@ -35,7 +35,7 @@ export function Footer({
           ))}
         </nav>
 
-        <div className="footer-contact">
+        <address className="footer-contact">
           {contactDetails.map((detail) =>
             detail.href ? (
               <a key={detail.label} href={detail.href}>
@@ -45,7 +45,7 @@ export function Footer({
               <span key={detail.label}>{detail.value}</span>
             ),
           )}
-        </div>
+        </address>
       </div>
     </footer>
   )

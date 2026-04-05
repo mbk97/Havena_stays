@@ -27,12 +27,15 @@ import {
 function App() {
   return (
     <div className="site-shell">
+      <a className="skip-link" href="#main-content">
+        Skip to main content
+      </a>
       <Header
         companyName={companyName}
         tagline={companyTagline}
         navLinks={navLinks}
       />
-      <main>
+      <main id="main-content">
         <HeroSection highlights={heroHighlights} />
         <TrustStrip items={trustBadges} />
         <AboutSection checklist={aboutChecklist} serviceAreas={serviceAreas} />

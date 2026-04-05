@@ -10,7 +10,7 @@ export function Header({ companyName, tagline, navLinks }: HeaderProps) {
   return (
     <header className="site-header">
       <a className="brand" href="#home" aria-label={`${companyName} home`}>
-        <span className="brand__mark">NS</span>
+        <span className="brand__mark">HS</span>
         <span className="brand__text">
           <strong>{companyName}</strong>
           <small>{tagline}</small>
