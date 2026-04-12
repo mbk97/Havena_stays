@@ -1,5 +1,4 @@
 import { Icon } from './Icon'
-import { LeadForm } from './LeadForm'
 import { SectionHeading } from './SectionHeading'
 import type { ContactDetail } from '../types/site'
 
@@ -10,12 +9,12 @@ interface ContactSectionProps {
 export function ContactSection({ contactDetails }: ContactSectionProps) {
   return (
     <section className="section" id="contact">
-      <div className="section-inner contact-layout">
+      <div className="section-inner">
         <div className="contact-card contact-card--accent">
           <SectionHeading
             eyebrow="Contact"
-            title="Book a free consultation about your property"
-            description="Speak with Havena Stays about your property, your rental goals, and the best next steps for short-stay management."
+            title="Get a free consultation"
+            description="Reach out to Havena Stays directly to discuss your property, your rental goals, and the best next steps for short-stay management."
           />
 
           <address className="contact-points">
@@ -44,8 +43,6 @@ export function ContactSection({ contactDetails }: ContactSectionProps) {
             </p>
           </div>
         </div>
-
-        <LeadForm />
       </div>
     </section>
   )
