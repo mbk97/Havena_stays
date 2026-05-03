@@ -35,8 +35,10 @@ jobs:
           host: ${{ secrets.SERVER_IP }}
           username: ec2-user
           key: ${{ secrets.SSH_KEY }}
-          source: "dist/*"
+          source: "dist/**"
           target: "/var/www/react"
+          strip_components: 1
+          overwrite: true
 
       # 6. Restart Nginx
       - name: Restart Nginx
