@@ -36,7 +36,7 @@ jobs:
           username: ec2-user
           key: ${{ secrets.SSH_KEY }}
           source: "dist/*"
-          target: "/var/www/html"
+          target: "/var/www/react"
 
       # 6. Restart Nginx
       - name: Restart Nginx
