@@ -37,7 +37,7 @@ export function AboutSection({
             <p>
               Havena Stays is designed to help landlords unlock stronger
               short-stay performance without taking on the daily workload
-              themselves.
+              themselves updated.
             </p>
           </div>
 
