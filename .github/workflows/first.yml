@@ -22,11 +22,11 @@ jobs:
 
       # 3. Install dependencies
       - name: Install dependencies
-        run: cd react-app && npm install
+        run: npm install
 
       # 4. Build project (Vite → dist folder)
       - name: Build project
-        run: cd react-app && npm run build
+        run: npm run build
 
       # 5. Upload build to EC2 (Nginx)
       - name: Upload to EC2
@@ -35,7 +35,7 @@ jobs:
           host: ${{ secrets.SERVER_IP }}
           username: ec2-user
           key: ${{ secrets.SSH_KEY }}
-          source: "react-app/dist/*"
+          source: "dist/*"
           target: "/var/www/html"
 
       # 6. Restart Nginx
