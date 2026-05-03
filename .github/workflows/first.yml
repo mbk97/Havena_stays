@@ -1,0 +1,49 @@
+name: Frontend CI
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  frontend:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Get your code
+      - uses: actions/checkout@v4
+
+      # 2. Setup Node
+      - name: Use Node.js 18
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      # 3. Install dependencies
+      - name: Install dependencies
+        run: cd react-app && npm install
+
+      # 4. Build project (Vite → dist folder)
+      - name: Build project
+        run: cd react-app && npm run build
+
+      # 5. Upload build to EC2 (Nginx)
+      - name: Upload to EC2
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.SERVER_IP }}
+          username: ec2-user
+          key: ${{ secrets.SSH_KEY }}
+          source: "react-app/dist/*"
+          target: "/var/www/html"
+
+      # 6. Restart Nginx
+      - name: Restart Nginx
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.SERVER_IP }}
+          username: ec2-user
+          key: ${{ secrets.SSH_KEY }}
+          script: |
+            sudo systemctl restart nginx
